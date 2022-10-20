@@ -1,12 +1,9 @@
 header {
   padding: 30px;
-  background-color: #fff;
-    max-width: 100%;
-
 }
 
 #divBusca{
-  background-color:#fff;
+  /* background-color:#fff; */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -20,14 +17,14 @@ header {
 }
 #txtBusca{
   float:left;
-  background-color:transparent;
+  background-color:rgba(00, 00, 00, 0.2);
   padding-left:5px;
   font-style:italic;
   font-size:18px;
   border:none;
   height:32px;
   width:320px;
-  border:solid 1px;
+  /* border:solid 1px; */
   border-radius:15px;
 }
 #btnBusca {
@@ -55,7 +52,7 @@ max-height: 100px;
 
 }
 main{
-  background: mistyrose;
+  background: red;
 }
 .menu li{
   list-style: none;
@@ -72,7 +69,7 @@ main{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  background: mistyrose;
+  /* background: mistyrose; */
 }
 .produto{
   border: solid 1px; 
@@ -87,7 +84,7 @@ main{
 }
 footer{
    padding: 30px;
-  background-color: #fff;
+    /* background-color: #fff; */
     max-width: 100%;
   
 }
@@ -124,4 +121,5 @@ main{
 }
 body{
   font-family: Tahoma;
+  background-color: red !important;
 }
