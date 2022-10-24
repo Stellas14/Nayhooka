@@ -123,3 +123,11 @@ body{
   font-family: Tahoma;
   background-color: red !important;
 }
+.login{
+  background-color: salmon;
+  border-radius: 1em;
+}
+.login input{
+  border-radius: 1em;
+  margin: 2px auto;
+}
