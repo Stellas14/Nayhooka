@@ -52,7 +52,7 @@ max-height: 100px;
 
 }
 main{
-  background: red;
+  background: transparent;
 }
 .menu li{
   list-style: none;
@@ -121,5 +121,5 @@ main{
 }
 body{
   font-family: Tahoma;
-  background-color: red !important;
+  background-color: #FFF2FA !important;
 }

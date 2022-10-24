@@ -1,5 +1,22 @@
 #NayHooka
 
+## Tasks To-Do Desig
+
+- [X]home
+- [X]pesquisa de produto
+- [X]Produto nao encontrado 
+- [X] login
+- [ ]cadastro
+- [ ]produto
+- [ ]carrinho
+- [ ]realizando compra
+- [ ]compra realizada
+
+## Tasks To-Do Desenvolvimento
+
+- [ ]TELA HOME
+	- [ ]
+
 ## Rec - Func - Adm
 - [ ] Cadastro de Produtos
 - [ ] Remoção de produtos
