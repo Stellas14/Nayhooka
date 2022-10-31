@@ -52,7 +52,7 @@ max-height: 100px;
 
 }
 main{
-  background: red;
+  background: transparent;
 }
 .menu li{
   list-style: none;
@@ -130,4 +130,5 @@ body{
 .login input{
   border-radius: 1em;
   margin: 2px auto;
+  background-color: #FFF2FA !important;
 }
