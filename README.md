@@ -2,21 +2,25 @@
 
 ## Tasks To-Do Desig
 
-- [X]home
-- [X]pesquisa de produto
-- [X]Produto nao encontrado 
-- [X] login
-- [ ]cadastro
-- [ ]produto
-- [ ]carrinho
-- [ ]realizando compra
-- [ ]compra realizada
+- [X] Home
+- [X] Pesquisa de produto
+- [X] Produto nao encontrado 
+- [X] Login
+- [ ] Cadastro
+- [X] Produto
+- [X] Carrinho
+- [ ] Realizando compra
+- [ ] Compra realizada
+- [ ] Login ADM
+- [ ] Adicionar/Editar/Remover Produto ADM
 
 ## Tasks To-Do Desenvolvimento
 
-- [ ]TELA HOME
-	- [ ]
-
+- [ ] TELA HOME
+	- [ ] Criar Seach
+		-[ ] 
+	- [ ] FAZER FOOTER
+		-[ ] COLOCAR ICONES PARA O LADO DIREITO
 ## Rec - Func - Adm
 - [ ] Cadastro de Produtos
 - [ ] Remoção de produtos
