@@ -24,8 +24,7 @@ header {
   border:none;
   height:32px;
   width:320px;
-  /* border:solid 1px; */
-  border-radius:15px;
+  border-radius:15px 0px 0px 15px;
 }
 #btnBusca {
   max-height: 50px;
@@ -48,8 +47,6 @@ max-height: 100px;
   height: 40px;
   max-width: 100%;
   align-items: center;
-
-
 }
 main{
   background: transparent;
@@ -121,7 +118,7 @@ main{
 }
 body{
   font-family: Tahoma;
-  background-color: #FFF2FA  !important;
+  background-color: #FFF2FA;
 }
 .login{
   background-color: salmon;
@@ -133,4 +130,39 @@ body{
   background-color: #FFF2FA !important;
 }
 
+.search i {
+  background-color:rgba(00, 00, 00, 0.2) !important;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+}
+.input-icon {
+  display: flex;
+  width: 100%;
+}
+/* .input-icon i {
+  position: absolute;
+  justify-self: left;
+  align-self: flex-end;
+} */
 
+/* .input-icon input {
+  width: 100%;
+} */
+
+.btn-tema {
+  width: 150;
+  height: 40px;
+}
+
+.bodyDark{
+  background-color: #BABACA  !important;
+}
+
+.menuDark{
+  background-color: #fff !important;
+}
+
+
+.menuDark li a {
+  color: #000 !important;
+}
