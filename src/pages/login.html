@@ -1,31 +1,63 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <style>
+    * {font-family: 'Merriweather', serif;}
+
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Login</title>
+  <link href="../style.css" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<head>
+  <style>
+    * {font-family: 'Merriweather', serif;}
+
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Nay Hookah</title>
   <link href="../style.css" rel="stylesheet" type="text/css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-</head>
-<body class="container-fluid">
-<header class="row">
-    <div id="divBusca">
-      <div>
-        <img src="../assets/img/logoTopo.png" id="logo" />
-      </div>
-        
-        <div class="lupa">
-          <input type="text" id="txtBusca" placeholder="Buscar..." /> <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-      <div>
-        <i class="fa-solid fa-user"></i>
-        <p><a id="labelAcessarConta" href="Minha Conta">Acessar Minha Conta</a></p>
-      </div>
-      <div>
-        <img src="../assets/img/" id="carrinho">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="container-fluid p-0 m-0">
+  <header class="row justify-content-between">
+    <div class="col-4">
+      <img src="../assets/img/logoTopo.png" id="logo" />
+    </div>
+    
+    <div class="col-5" id="divBusca">
+      <div class="input-icon">
+        <input type="text" id="txtBusca" placeholder="Buscar..." aria-describedby="iconLupa" /> 
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
       </div>
     </div>
+
+    <div class="col-1 d-flex text-end">
+      
+      <a   href="./login.html"> <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="mt-2 fa-solid fa-circle-user fa-2x"></i> </a>
+     
+    </div>
+    <div class="col-2" id="carrinho">
+      <i class="fa-solid fa-cart-shopping fa-2x"></i>
+    </div>
+      
+  </header>
 
     <ul class="menu">
       <li><a href="https://hotmart.s3.amazonaws.com/product_contents/8fa6debb-cc6b-414b-908d-13a776366e25/teste.jpeg">MENU</a></li>
@@ -82,6 +114,7 @@
 <script src="https://kit.fontawesome.com/0fa8a3f167.js" crossorigin="anonymous"></script> 
 <!--codigo do fontawsome-->
 <script src="../script.js"></script>
+<button onclick="changeTheme()" class="btn btn-secondary btn-tema">Mudar Tema</button>
 </body>
 
 </html>

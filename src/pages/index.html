@@ -9,38 +9,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Nay Hookah</title>
-  <!-- <link href="reset.css" rel="stylesheet" type="text/css"> -->
   <link href="../style.css" rel="stylesheet" type="text/css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-<!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body class="container-fluid p-0 m-0">
   <header class="row justify-content-between">
-    <div class="col-4 ">
+    <div class="col-4">
       <img src="../assets/img/logoTopo.png" id="logo" />
     </div>
     
-    <div class="col-4" id="divBusca">
+    <div class="col-5" id="divBusca">
       <div class="input-icon">
         <input type="text" id="txtBusca" placeholder="Buscar..." aria-describedby="iconLupa" /> 
         <i class="fa-solid fa-magnifying-glass fa-2x"></i>
       </div>
     </div>
 
-    <div class="col-4 d-flex text-end">
-      <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="mt-2 fa-solid fa-circle-user fa-2x"></i>
-      <p><a id="labelAcessarConta" href="./login.html">Acessar Minha Conta</a></p>
-      <i class="fa-duotone fa-cart-shopping"></i>
-      <button onclick="changeTheme()" class="btn btn-secondary btn-tema">Mudar Tema</button>
+    <div class="col-xl-1 d-flex text-end">
+      
+      <a   href="./login.html"> <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="mt-2 fa-solid fa-circle-user fa-2x"></i> </a>
+     
     </div>
+    <div class="col-2" id="carrinho">
+      <i class="fa-solid fa-cart-shopping fa-2x"></i>
+    </div>
+
       
   </header>
 
@@ -133,7 +133,7 @@
  <script src="https://kit.fontawesome.com/0fa8a3f167.js" crossorigin="anonymous"></script> 
  <script src="../script.js"></script>
  <!--codigo do fontawsome-->
-
+  <button onclick="changeTheme()" class="btn btn-secondary btn-tema">Mudar Tema</button>
 </body>
 
 </html>
