@@ -36,7 +36,7 @@
 </head>
 
 <body class="container-fluid p-0 m-0">
-  <header class="row justify-content-between">
+  <header class="row justify-content-between sticky-top">
     <div class="col-4">
       <img src="../assets/img/logoTopo.png" id="logo" />
     </div>
@@ -48,19 +48,19 @@
       </div>
     </div>
 
-    <div class="col-1 d-flex text-end">
+    <div class="col-1 mx-2 py-3">
       
-      <a   href="./login.html"> <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="mt-2 fa-solid fa-circle-user fa-2x"></i> </a>
+      <a   href="./login.html"> <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="fa-solid fa-circle-user fa-2x"></i> </a>
      
     </div>
-    <div class="col-2" id="carrinho">
+    <div class="col-2 mx-2 py-3" id="carrinho">
       <i class="fa-solid fa-cart-shopping fa-2x"></i>
     </div>
+
       
   </header>
 
     <ul class="menu">
-      <li><a href="https://hotmart.s3.amazonaws.com/product_contents/8fa6debb-cc6b-414b-908d-13a776366e25/teste.jpeg">MENU</a></li>
       <li><a href="https://hotmart.s3.amazonaws.com/product_contents/8fa6debb-cc6b-414b-908d-13a776366e25/teste.jpeg">PROMOÇÕES</a></li>
       <li><a href="https://hotmart.s3.amazonaws.com/product_contents/8fa6debb-cc6b-414b-908d-13a776366e25/teste.jpeg">NARGUILES</a></li>
       <li><a href="https://hotmart.s3.amazonaws.com/product_contents/8fa6debb-cc6b-414b-908d-13a776366e25/teste.jpeg">ACESSORIOS</a></li>
@@ -94,21 +94,19 @@
 
 
 <footer>
-
   <a href="#logo"><img class="outrologo" src="../assets/img/logoRodape.png" id="naylogo">
   </a>
-
-<div>
-  <a href="https://www.google.com/maps/place/Nay+Hookah/@-23.680051,-46.6359022,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce4571895097bf:0x45bdc05cb59ff60!8m2!3d-23.6800167!4d-46.633712" target="_blank">
-    Retire em mãos
-  </a>
-
+  <div class="col-12 right">
+    <a href="https://www.google.com/maps/place/Nay+Hookah/@-23.680051,-46.6359022,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce4571895097bf:0x45bdc05cb59ff60!8m2!3d-23.6800167!4d-46.633712" target="_blank">
+      Retire em mãos
+    </a>
     <a href="https://instagram.com/nay.hookah?igshid=YmMyMTA2M2Y=" target="_blank">
       <i class="fa-brands fa-instagram fa-2xl"></i>
     </a>
     <a href="https://api.whatsapp.com/send?phone=5511964597169" target="_blank">
       <i class="fa-brands fa-whatsapp fa-2xl"></i>
     </a>
+    <button onclick="changeTheme()" class="btn btn-secondary btn-tema">Mudar Tema</button>
   </div>
 </footer>
 <script src="https://kit.fontawesome.com/0fa8a3f167.js" crossorigin="anonymous"></script> 
