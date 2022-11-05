@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 header{
   padding: 30px 0;
   max-width: 100%;
   align-items: center;
-=======
-header {
   padding: 10px;
   background-color: #FFF2FA;
   max-width: 100%;
->>>>>>> 0ee5ef343cdc657924e4ce7285547ba23d8c6ae1
 }
 #divBusca{
   /* background-color:#fff; */
@@ -125,8 +121,8 @@ body{
   font-family: Tahoma;
   background-color: #FFF2FA;
 }
-.login{
-  background-color: #FFF2FA;
+.login {
+  background-color: salmon;
   border-radius: 1em;
   margin: auto;
   min-height: 300px;
@@ -175,19 +171,7 @@ body{
 .menuDark li a {
   color: #000 !important;
 }
-<<<<<<< HEAD
-
 .right{
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
 }
-=======
-footer{
-  background-color: #BABACA;
-}
-.right{
-  display: flex;
-  justify-content: flex-end;
-  align-items: end;
-}
->>>>>>> 0ee5ef343cdc657924e4ce7285547ba23d8c6ae1
