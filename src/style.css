@@ -1,7 +1,8 @@
-header {
-  padding: 30px;
+header{
+  padding: 30px 0;
+  max-width: 100%;
+  align-items: center;
 }
-
 #divBusca{
   /* background-color:#fff; */
   display: flex;
@@ -9,7 +10,6 @@ header {
   justify-content: space-around;
   height: 70px;
   align-items: center;
-
 }
 .lupa{
   display: flex;
@@ -33,6 +33,7 @@ header {
 #carrinho {
   max-height: 50px;
   max-width: 50px;
+  margin: auto 0px;
 }
 #logo {
 max-width: 300px;
@@ -80,10 +81,9 @@ main{
   border-radius: 1em;
 }
 footer{
-   padding: 30px;
-    /* background-color: #fff; */
-    max-width: 100%;
-  
+  padding: 30px 0;
+  background-color: #BABACA;
+  width: 100%;
 }
 .outrologo{
 max-width: 300px;
@@ -123,13 +123,21 @@ body{
 .login{
   background-color: salmon;
   border-radius: 1em;
+  margin: auto;
+  min-height: 300px;
+  justify-content: space-evenly;
 }
 .login input{
   border-radius: 1em;
-  margin: 2px auto;
+  margin: .5em auto;
   background-color: #FFF2FA !important;
+  max-width: 95%;
 }
-
+.login button{
+  max-width: 80%;
+  margin: 1em auto;
+  border-radius: 1em;
+}
 .search i {
   background-color:rgba(00, 00, 00, 0.2) !important;
   border: none;
@@ -165,4 +173,9 @@ body{
 
 .menuDark li a {
   color: #000 !important;
+}
+
+.right{
+  display: flex;
+  justify-content: space-around;
 }
