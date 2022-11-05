@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 header{
   padding: 30px 0;
   max-width: 100%;
   align-items: center;
+=======
+header {
+  padding: 10px;
+  background-color: #FFF2FA;
+  max-width: 100%;
+>>>>>>> 0ee5ef343cdc657924e4ce7285547ba23d8c6ae1
 }
 #divBusca{
   /* background-color:#fff; */
@@ -51,6 +58,7 @@ max-height: 100px;
 }
 main{
   background: transparent;
+  margin: 0;
 }
 .menu li{
   list-style: none;
@@ -98,9 +106,6 @@ max-height: 100px;
   padding: 2px 2px 0 2px;
   float: right;
 }
-main{
-  margin-top: 0;
-}
 .carrossel{
   max-width: 80%;
   height: 500px;
@@ -121,7 +126,7 @@ body{
   background-color: #FFF2FA;
 }
 .login{
-  background-color: salmon;
+  background-color: #FFF2FA;
   border-radius: 1em;
   margin: auto;
   min-height: 300px;
@@ -161,21 +166,28 @@ body{
   width: 150;
   height: 40px;
 }
-
 .bodyDark{
   background-color: #BABACA  !important;
 }
-
 .menuDark{
   background-color: #fff !important;
 }
-
-
 .menuDark li a {
   color: #000 !important;
 }
+<<<<<<< HEAD
 
 .right{
   display: flex;
   justify-content: space-around;
 }
+=======
+footer{
+  background-color: #BABACA;
+}
+.right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+>>>>>>> 0ee5ef343cdc657924e4ce7285547ba23d8c6ae1
