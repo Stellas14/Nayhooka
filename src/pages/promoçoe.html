@@ -18,21 +18,20 @@
 </head>
 
 <body class="container-fluid p-0 m-0">
-  <header class="row justify-content-between m-0 sticky-top">
+  <header class="row justify-content-between sticky-top">
     <div class="col-4">
-      <a href="./index.html">
+      <a href="../pages/index.html">
         <img src="../assets/img/logoTopo.png" id="logo" />
       </a>
     </div>   
     <div class="col-5" id="divBusca">
-      <div class="input-icon-container">
-        <input type="text" placeholder="Buscar..." aria-describedby="iconLupa" /> 
+      <div class="input-icon">
+        <input type="text" id="txtBusca" placeholder="Buscar..." aria-describedby="iconLupa" /> 
         <i class="fa-solid fa-magnifying-glass fa-2x"></i>
       </div>
     </div>
     <div class="col-xl-1 d-flex text-end"> 
       <a href="./login.html"> <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="mt-2 fa-solid fa-circle-user fa-2x"></i> </a>
-      <span class="lILogin" id="labelAcessarConta">Faça seu login ou Cadastre-se</span>
     </div>
     <div class="col-2 px-0" id="carrinho">
       <i class="fa-solid fa-cart-shopping fa-2x"></i>
@@ -45,39 +44,13 @@
     <li><a href="./acessorios.html">ACESSORIOS</a></li>
   </ul>
 <main>
-<div id="formLogin" class="login container col-12">
-
-  <div class="mb-3 pt-3">
-    <div id="warningLogin" class="alert alert-danger d-none" role="alert"></div>
-  </div>
-
-  <form class="row">
     
-    <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="mt-2 fa-solid fa-circle-user fa-5x text-center"></i>
-    
-    <label class="form-label" for="email">Email</label>
-    <input class="form-control" type="email" id="email" name="email">
-
-    <label class="form-label" for="senha">Senha:</label>
-    <input class="form-control" type="password" id="senha" name="senha">
-    
-    <button class='' onclick="login()" type="button">Entrar</button>
-    <a class="text-center link-primary text-decoration-none" href="./cadastro.html">Cadastre-se</a>
-  </form>
-</div>
-
-<div id="warningLogado" class="d-none">
-  <div id="Logado" class="alert alert-warning" role="alert">
-    <span>Você já esta logado, para deslogar clique no botão a baixo</span>
-  </div>
-  <button class="btn btn-danger" onclick="exitLogin()">Sair</button>
-</div>
 </main>
 
 <footer class="justify-content-between row position-absolute bottom-0">
-  <div class="col-4">
-    <a href="./index.html"><img class="col-8 outrologo" src="../assets/img/logoRodape.png" id="naylogo">
-    </a>
+    <div class="col-4">
+        <a href="./index.html"><img class="col-8 outrologo" src="../assets/img/logoRodape.png" id="naylogo">
+        </a>
   </div>
   <div class="right col-8">
   <a href="https://www.google.com/maps/place/Nay+Hookah/@-23.680051,-46.6359022,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce4571895097bf:0x45bdc05cb59ff60!8m2!3d-23.6800167!4d-46.633712" target="_blank">
