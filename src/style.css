@@ -127,6 +127,8 @@ body{
   margin: auto;
   min-height: 300px;
   justify-content: space-evenly;
+  width: 45rem !important;
+  height: 35rem;
 }
 .login input{
   border-radius: 1em;
@@ -143,10 +145,6 @@ body{
   background-color:rgba(00, 00, 00, 0.2) !important;
   border: none;
   border-radius: 0px 15px 15px 0px;
-}
-.input-icon {
-  display: flex;
-  width: 100%;
 }
 /* .input-icon i {
   position: absolute;
@@ -174,4 +172,52 @@ body{
 .right{
   display: flex;
   justify-content: end;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.input-icon-container{
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #374669;
+  border-radius: 5px;
+  background : #fff;
+  align-items : center;
+  overflow: hidden;
+  background-color:rgba(00, 00, 00, 0.2);
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:320px;
+  border-radius:15px 15px 15px 15px;
+}
+
+.input-icon-container input {
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 1em;
+  padding: .5em;
+  color: inherit;
+  flex : auto 1 1;
+  width : 100%;
+  background : none;
+  background-color : transperant;
+  
+
+}
+
+.input-icon-container i {
+font-size: 1.5rem;
+padding-right: 0.5rem;
+}
+
+.btn-nay{}
+.lILogin{
+  font-size: 1ch !important;
 }

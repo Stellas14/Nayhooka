@@ -28,9 +28,9 @@ var login = ()=>{
 
 var loginCheck = async () => {
     if(localStorage.getItem('isLogado') === 'true'){
-        document.querySelector('#labelAcessarConta').innerHTML = await localStorage.getItem('user')
-        document.querySelector('#warningLogado').classList.remove('d-none')
-        document.querySelector('#formLogin').classList.add('d-none')
+        document.querySelector('#labelAcessarConta').innerHTML = `Olá, ${await localStorage.getItem('user')}`
+        document.querySelector('#warningLogado')?.classList.remove('d-none')
+        document.querySelector('#formLogin')?.classList.add('d-none')
         return
     }
     document.querySelector('#formLogin')?.classList?.remove('d-none')
