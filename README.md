@@ -14,6 +14,7 @@
 - [ ] Deixar carrinho clicavel
 - [ ] Drop Down di carrinho
 - [ ] Organizar Footer
+- [ ] Colocar logo "We-SA 406" no footer
 
 ### Home
 - [ ] Carrossel direcionar para produtos/page
