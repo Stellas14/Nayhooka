@@ -1,5 +1,53 @@
 #NayHooka
 
+## 19/11
+## Detalhes faltantes
+
+### Geral
+- [ ] Mudar letras
+- [ ] Deixar modo Dark real escuro
+- [ ] Funcionar ferramenta de busca
+- [ ] Fazer a lupa ser clicavel para pesquisa(opcional)
+- [ ] Nao deixar os "links" ficarem azul
+- [ ] Mudar nomes em todas as guias
+- [ ] Favicon
+- [ ] Deixar carrinho clicavel
+- [ ] Drop Down di carrinho
+- [ ] Organizar Footer
+
+### Home
+- [ ] Carrossel direcionar para produtos/page
+- [ ] Carrossel girar sozinho
+
+#### Promoções
+- [ ] Inserir Produtos (4 Colunas 8 produtos)
+- [ ] Colocar texto do icon de login
+
+### Narguiles
+- [ ] Inserir Produtos (4 Colunas 8 produtos)
+- [ ] Colocar texto do icon de login
+
+### Acessorios
+- [ ] Inserir Produtos (4 Colunas 8 produtos)
+- [ ] Colocar texto do icon de login
+
+### Login (quando loga)
+- [ ] tirar o aviso de login
+- [ ] Retornar para tela inicial ao logar
+
+### Cadastro
+- [ ] Desentortar tudo
+- [ ] inserir termos
+- [ ] Fazer o "Cadastro" funcionar
+
+## Criar telas
+- [ ] De Produto
+- [ ] Finalização de compra
+- [ ] Produto nao encontrado
+
+
+
+
 ## Tasks To-Do Desig
 
 - [X] Home
