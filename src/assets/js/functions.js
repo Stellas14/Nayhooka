@@ -7,7 +7,7 @@ var loadCarrinho = ()=>{
         const listCarrinho = document.querySelector('#listCarrinho')    
         test = busca.getAll()
         test.onsuccess = function(){
-            if(test.result.lenght > 0){
+            if(test.result.length > 0){
                 listCarrinho.innerHTML = test.result.map(e => `
                 <p> ${e.name} - ${e.quantidade}</p>
         
