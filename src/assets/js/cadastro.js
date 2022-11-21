@@ -15,9 +15,11 @@ var Cadastrar = () => {
                     console.log("valido")
                     let email = document.querySelector('#Email').value
                     let senha = document.querySelector('#senha').value
+                    let endereco = document.querySelector('#inputAddress').value
                     let user = document.querySelector('#FullName')?.value?.split(' ')[0]
                     localStorage.setItem('isLogado', 'true')
                     localStorage.setItem('user', user)
+                    localStorage.setItem('endereco',endereco)
                     window.location.href = `${window.location.origin}/src/pages/`
                 }
 

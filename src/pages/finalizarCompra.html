@@ -55,35 +55,29 @@
     <li><a href="./narguiles.html">NARGUILES</a></li>
     <li><a href="./acessorios.html">ACESSORIOS</a></li>
   </ul>
-
 <main>
-<div id="formLogin" class="login container col-12">
 
-  <div class="mb-3 pt-3">
-    <div id="warningLogin" class="alert alert-danger d-none" role="alert"></div>
+  <div class="container row">
+    <div id="sucessCompra" class="alert alert-success" role="alert">
+      Compra realizada com sucesso
+    </div>
+    
+    <div class="container col-10">
+      <h2>Detalhes do pedido</h2>
+      <div id="detalhesPedido"></div>
+      <div class="mt-5" id="endereco">
+        Endereço:
+      </div>
+      <div class="mt-5">
+        Forma de pagamento: Pix
+      </div>
+    </div>
+    <div class="row col-2">
+      <span id="Total">Total</span>
+      <button onclick="FinalizarCompra()" class="btn_arredont">Comprar</button>
+    </div>
   </div>
 
-  <form class="row">
-    
-    <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="mt-2 fa-solid fa-circle-user fa-5x text-center"></i>
-    
-    <label class="form-label" for="email">Email</label>
-    <input class="form-control" type="email" id="email" name="email">
-
-    <label class="form-label" for="senha">Senha:</label>
-    <input class="form-control" type="password" id="senha" name="senha">
-    
-    <button class='' onclick="login()" type="button">Entrar</button>
-    <a class="text-center link-primary text-decoration-none" href="./cadastro.html">Cadastre-se</a>
-  </form>
-</div>
-
-<div id="warningLogado" class="d-none">
-  <div id="Logado" class="alert alert-warning" role="alert">
-    <span>Você já esta logado, para deslogar clique no botão a baixo</span>
-  </div>
-  <button class="btn btn-danger" onclick="exitLogin()">Sair</button>
-</div>
 </main>
 
 <footer class="justify-content-between row position-absolute bottom-0">
@@ -106,6 +100,7 @@
 <script src="https://kit.fontawesome.com/0fa8a3f167.js" crossorigin="anonymous"></script> 
 <!--codigo do fontawsome-->
 <script src="../script.js"></script>
+<script src="../assets/js/detalhesProduto.js"></script>
 
 
 </body>

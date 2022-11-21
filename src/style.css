@@ -271,6 +271,10 @@ padding-right: 0.5rem;
   border-radius: 1rem;
 }
 
+.btn_arredont{
+  border-radius: 1rem;
+}
+
 .dropCarrinho{
   border: solid 1px !important;
   border-radius: 20px 0px 20px 20px !important;
@@ -278,4 +282,8 @@ padding-right: 0.5rem;
   padding: 15px !important;
   width: 400px !important;
 
+}
+
+#sucessCompra{
+  display: none;
 }

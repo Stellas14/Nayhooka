@@ -12,6 +12,8 @@ var loadCarrinho = ()=>{
                 <p> ${e.name} - ${e.quantidade}</p>
         
                 `).join('')
+                +
+                `<button class="btn_arredont" onclick="TelaDeCompra()">Comprar</button>`
             }else{
 
             }
@@ -37,4 +39,14 @@ var selecionarProduto = (element)=>{
    
     console.log(element)
 
+}
+
+var TelaDeCompra = () =>{
+    if(localStorage.getItem('isLogado') === 'true'){
+        window.location.href = `${window.location.origin }/src/pages/finalizarCompra.html`
+    }else{
+        window.location.href = `${window.location.origin }/src/pages/login.html`
+    }
+
+    
 }

@@ -218,22 +218,5 @@ request.onsuccess = function () {
     };
 };
 
-var selecionarProduto = (element)=>{
-    const request = indexedDB.open("NayDB", 1);
-    request.onsuccess = function(){
-        const db = request.result
-        const transaction = db.transaction('produtoSelecionado', "readwrite");
-        transaction.objectStore("produtoSelecionado").clear()
-        const produtoSelecionado = transaction.objectStore("produtoSelecionado");
-        produtoSelecionado.put(element)
-        window.location.href = `${window.location.origin }/src/pages/produto.html`
-
-        
-    }
-   
-    console.log(element)
-
-}
-
 
 loadCarrinho()
