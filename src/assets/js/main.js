@@ -106,6 +106,18 @@ var product =
         name:'Prato Wire',
         price:'15,00',
         pathImg:'../assets/img/pratowire.png'
+    },
+    {
+        id:7,
+        name:'Gabarto de Furo',
+        price:'14,00',
+        pathImg:'../assets/img/gabarito.PNG'
+    },
+    {
+        id:8,
+        name:'kaloud Lotus',
+        price:'30,00',
+        pathImg:'../assets/img/kaloud.PNG'
     },],
     pesquisa:[],
 
