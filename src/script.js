@@ -110,7 +110,6 @@ var product =
 
 }
 
-
 var login = ()=>{
 
     fetch('../mockDB.json').then(response => response.json().then(data => {
@@ -170,31 +169,8 @@ var changeSize = () => {
 
 var loadProducts = (page) => {
    
-    // var guias = {
-    //     ['index']:()=> {
-    //         const mainDiv = document.querySelector('#gridProdutos')
-    //         mainDiv.innerHTML = mainDiv.innerHTML + product[type].map(e => `
-    //         <a href="./produto.html" class="col-3">
-    //         <div class="produto">
-    //           <img class='img-responsive' src="${e.pathImg}" id="${e.id}">
-    //           <p>${e.name}</p>
-    //           <p><strong>R$${e.price}</strong></p>
-    //         </div>
-    //         </a>`).join('')
-    //     }
-    // }
 
-    // guias[page]()
 
-    const mainDiv = document.querySelector('#gridProdutos')
-    mainDiv.innerHTML = mainDiv?.innerHTML + product[page]?.map(e => `
-    <a href="./produto.html" class="col-3">
-    <div class="produto">
-        <img class='img-responsive' src="${e.pathImg}" id="${e.name + e.id}">
-        <p>${e.name}</p>
-        <p><strong>R$${e.price}</strong></p>
-    </div>
-    </a>`).join('')
 
 
 
@@ -243,7 +219,7 @@ document.querySelector('#formPesquisa').addEventListener("submit",function(event
 
 
         localStorage.setItem('pesquisa',valueSearch)
-        product.pesquisa = Object.values(product).flat().filter(e => e.name.toLowerCase().includes(valueSearch.toLowerCase()))
+        // product.pesquisa = Object.values(product).flat().filter(e => e.name.toLowerCase().includes(valueSearch.toLowerCase()))
         window.location.href = `${window.location.origin}/src/pages/pesquisa.html`
 
 
@@ -262,5 +238,5 @@ if(window.location.pathname.split('/').slice(-1)[0].replace('.html','') == 'pesq
 
 
   var route = window.location.pathname.split('/').slice(-1)[0].replace('.html','')
-if( route != 'produto')
+if( route == 'pesquisa')
 loadProducts(route)
