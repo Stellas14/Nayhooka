@@ -1,3 +1,9 @@
+@font-face {
+  font-family: fontMain;
+  src: url(../src/assets/fonte/Merriweather-Regular.ttf);
+}
+* {font-family: 'Merriweather', serif;}
+
 header{
   padding: 30px 0;
   max-width: 100%;
@@ -107,10 +113,10 @@ max-height: 100px;
   float: right;
 }
 .carrossel{
-  max-width: 80%;
+  width: 100%;
   height: 500px;
   margin: 1em auto;
-  border-radius: 1em;
+  /* border-radius: 1em; */
   object-fit: cover;
 }
 .carrossel img{
@@ -118,7 +124,7 @@ max-height: 100px;
   height: 500px;
   object-fit: cover;
   display: block;
-  border-radius: 1em;
+  /* border-radius: 1em; */
 }
 .maisVendidos{
   display: flex;
@@ -247,5 +253,29 @@ padding-right: 0.5rem;
 .lILogin{
   font-size: 1ch !important;
   
+
+}
+
+.imgTelaProduto{
+  width: 500px;
+  height: 500px;
+}
+.asideProduto{
+  border: solid 5px;
+  border-radius: 15px; 
+  border-color: #FFF2FA;
+  background-color: #FFF2FA;
+}
+
+.asideProduto button{
+  border-radius: 1rem;
+}
+
+.dropCarrinho{
+  border: solid 1px !important;
+  border-radius: 20px 0px 20px 20px !important;
+  background-color: #fab7e0 !important;
+  padding: 15px !important;
+  width: 400px !important;
 
 }

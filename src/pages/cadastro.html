@@ -18,82 +18,125 @@
 </head>
 
 <body class="container-fluid p-0 m-0">
-    <header class="row justify-content-between m-0 sticky-top">
-        <div class="col-4">
-          <a href="./index.html">
-            <img src="../assets/img/logoTopo.png" id="logo" />
-          </a>
-        </div> 
-        <div class="col-5" id="divBusca">
-          <div class="input-icon-container">
-            <input type="text" placeholder="Buscar..." aria-describedby="iconLupa" /> 
-            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-          </div>
-        </div>
-        <div class="col-xl-1 d-flex text-end"> 
-          <a href="./login.html"> <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()" class="mt-2 fa-solid fa-circle-user fa-2x"></i> </a>
-          <span class="lILogin" id="labelAcessarConta">Faça seu login ou Cadastre-se</span>
-        </div>
-        <div class="col-2 px-0" id="carrinho">
-          <i class="fa-solid fa-cart-shopping fa-2x"></i>
-        </div>
-    </header>
+  <header class="row justify-content-between m-0 sticky-top">
+    <div class="col-4">
+      <a href="../pages/index.html">
+        <img src="../assets/img/logoTopo.png" id="logo" />
+      </a>
+    </div>
+    <div class="col-5" id="divBusca">
+      <form id="formPesquisa" class="input-icon-container">
+        <input type="text" placeholder="Buscar..." aria-describedby="iconLupa" />
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+      </form>
+    </div>
+    <div class="col-xl-1 d-flex text-end">
+      <a href="./login.html"> <i id="iconConta" onmouseover="changeSize()" onmouseout="changeSize()"
+          class="mt-2 fa-solid fa-circle-user fa-2x"></i> </a>
+      <span class="lILogin" id="labelAcessarConta">Faça seu login ou Cadastre-se</span>
+    </div>
+    <div class="col-2 px-0" id="carrinho">
+      <i class="fa-solid fa-cart-shopping fa-2x"></i>
+    </div>
+  </header>
 
     <ul class="menu">
       <ul class="menu">
-        <li><a href="./promoçoe.html">PROMOÇÕES</a></li>
+        <li><a href="./promocoe.html">PROMOÇÕES</a></li>
         <li><a href="./narguiles.html">NARGUILES</a></li>
         <li><a href="./acessorios.html">ACESSORIOS</a></li>
       </ul>
+    </ul>
 <main>
-    <form class="row g-3 m-3">
-        <div class="col-md-12">
-            <label for="FullName" class="form-label">Nome</label>
-            <input id="FullName" type="text" class="form-control" id="FullName">
-          </div>
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input id="Email" type="email" class="form-control" id="inputEmail4">
+
+
+  <form class="row g-3 m-3 needs-validation" novalidate>
+    <div class="col-md-12 position-relative">
+      <label for="validationTooltip01" class="form-label">Nome</label>
+      <input id="FullName"type="text" class="form-control" id="validationTooltip01" required>
+      <div class="valid-tooltip">
+        Ok!
+      </div>
+      <div class="invalid-tooltip">
+        Por favor digite seu nome.
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input id="Email" type="email" class="form-control" id="inputEmail4" required>
+      <div class="valid-tooltip">
+        Ok!
+      </div>
+      <div class="invalid-tooltip">
+        Por favor digite um Email valido.
+      </div>
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="inputPassword4" class="form-label">Senha</label>
+      <input id="senha" type="password" class="form-control" id="inputPassword4" required>
+      <div class="valid-tooltip">
+        Ok!
+      </div>
+      <div class="invalid-tooltip">
+        Por favor digite uma Senha.
+      </div>
+    </div>
+    <div class="col-6">
+      <label for="inputAddress" class="form-label">Endereço</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Sua rua,numero" required>
+      <div class="invalid-tooltip">
+        Por favor digite seu endereço
+      </div>
+    </div>
+    <div class="col-6 position-relative">
+        <label for="inputBirthday" class="form-label">Data de Nascimento</label>
+        <input type="date" class="form-control" id="inputBirthday" placeholder="13/05/2000" required>
+        <div class="invalid-tooltip">
+          Por favor selecione uma data.
         </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">Senha</label>
-          <input id="senha" type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-md-6 position-relative">
+      <label for="validationTooltip03" class="form-label">Cidade</label>
+      <input type="text" class="form-control" id="validationTooltip03" required>
+      <div class="invalid-tooltip">
+        Por favor digite uma cidade.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip04" class="form-label">Estado</label>
+      <select class="form-select" id="validationTooltip04" required>
+        <option selected disabled value="">Estado</option>
+        <option>SP</option>
+      </select>
+      <div class="invalid-tooltip">
+        Por favor selecione um estado.
+      </div>
+    </div>
+    <div class="col-md-3 position-relative">
+      <label for="validationTooltip05" class="form-label">CEP</label>
+      <input type="text" class="form-control" id="validationTooltip05" required>
+      <div class="invalid-tooltip">
+        Por favor digite um cep.
+      </div>
+    </div>
+    <div class="col-12 position-relative">  
+        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+        <label class="form-check-label" for="gridCheck">
+          Aceito os <a href="../assets/termos/termoCadastro.pdf" target="_blank">Termos</a> 
+        </label>
+        <div class="valid-tooltip">
+          Ok!
         </div>
-        <div class="col-6">
-          <label for="inputAddress" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="Sua rua,numero">
+        <div class="invalid-tooltip">
+          Por favor aceite os Termos.
         </div>
-        <div class="col-6">
-            <label for="inputBirthday" class="form-label">Data de Nascimento</label>
-            <input type="date" class="form-control" id="inputBirthday" placeholder="13/05/2000">
-          </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Cidade</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Estado</label>
-          <select id="inputState" class="form-select">
-            <option selected>Estado</option>
-            <option>SP</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">CEP</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Aceito os <a href="...">Termos</a> 
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button onclick="Cadastrar()" type="submit" class="btn btn-light">Cadastrar</button>
-        </div>
-      </form>
+    </div>
+    <div class="col-12">
+      <button onclick="Cadastrar()" type="submit" class="btn btn-light">Cadastrar</button>
+    </div>
+  </form>
+
+    
 </main>
 
 <footer class="justify-content-between row position-absolute bottom-0">

@@ -1,3 +1,6 @@
+
+
+
 var login = ()=>{
 
     fetch('../mockDB.json').then(response => response.json().then(data => {
@@ -23,6 +26,7 @@ var login = ()=>{
         localStorage.setItem('isLogado','true')
         localStorage.setItem('user',user.user)
         loginCheck()
+        window.location.href = `${window.location.origin }/src/pages/`
     }))
 }
 
@@ -54,4 +58,64 @@ var changeSize = () => {
     document.querySelector('#iconConta').classList.toggle('fa-3x')
 }
 
+var loadProducts = (page) => {
+   
+    // var guias = {
+    //     ['index']:()=> {
+    //         const mainDiv = document.querySelector('#gridProdutos')
+    //         mainDiv.innerHTML = mainDiv.innerHTML + product[type].map(e => `
+    //         <a href="./produto.html" class="col-3">
+    //         <div class="produto">
+    //           <img class='img-responsive' src="${e.pathImg}" id="${e.id}">
+    //           <p>${e.name}</p>
+    //           <p><strong>R$${e.price}</strong></p>
+    //         </div>
+    //         </a>`).join('')
+    //     }
+    // }
+
+    // guias[page]()
+
+    const mainDiv = document.querySelector('#gridProdutos')
+    mainDiv.innerHTML = mainDiv?.innerHTML + product[page]?.map(e => `
+    <a href="./produto.html" class="col-3">
+    <div class="produto">
+        <img class='img-responsive' src="${e.pathImg}" id="${e.name + e.id}">
+        <p>${e.name}</p>
+        <p><strong>R$${e.price}</strong></p>
+    </div>
+    </a>`).join('')
+
+
+
+}
+
 loginCheck()
+
+document.querySelector('#formPesquisa').addEventListener("submit",function(event){
+    event.preventDefault()
+    event.stopPropagation()
+    const valueSearch = event.target.children[0].value
+
+    if(!valueSearch){
+        alert('Por Favor digite o nome do produto para pesquisar')
+        return
+    }
+    
+    localStorage.setItem('pesquisa',valueSearch)
+    product.pesquisa = Object.values(product).flat().filter(e => e.name.toLowerCase().includes(valueSearch.toLowerCase()))
+    window.location.href = `${window.location.origin}/src/pages/pesquisa.html`
+    
+    
+})
+
+if(window.location.pathname.split('/').slice(-1)[0].replace('.html','') == 'pesquisa' ){   
+    product.pesquisa = Object.values(product).flat().filter(e => e.name.toLowerCase().includes(localStorage.getItem('pesquisa').toString().toLowerCase()))
+    loadProducts('pesquisa')
+}
+
+
+
+  var route = window.location.pathname.split('/').slice(-1)[0].replace('.html','')
+// if( route != 'produto')
+// loadProducts(route)

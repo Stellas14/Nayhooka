@@ -4,10 +4,10 @@
 ## Detalhes faltantes
 
 ### Geral
-- [ ] Mudar letras
+- [x] Mudar letras
 - [ ] Deixar modo Dark real escuro
-- [ ] Funcionar ferramenta de busca
-- [ ] Fazer a lupa ser clicavel para pesquisa(opcional)
+- [x] Funcionar ferramenta de busca
+- [x] Fazer a lupa ser clicavel para pesquisa(opcional)
 - [ ] Nao deixar os "links" ficarem azul
 - [ ] Mudar nomes em todas as guias
 - [ ] Favicon
@@ -25,21 +25,21 @@
 - [ ] Colocar texto do icon de login
 
 ### Narguiles
-- [ ] Inserir Produtos (4 Colunas 8 produtos)
-- [ ] Colocar texto do icon de login
+- [x] Inserir Produtos (4 Colunas 8 produtos)
+- [x] Colocar texto do icon de login
 
 ### Acessorios
-- [ ] Inserir Produtos (4 Colunas 8 produtos)
-- [ ] Colocar texto do icon de login
+- [x] Inserir Produtos (4 Colunas 8 produtos)
+- [x] Colocar texto do icon de login
 
 ### Login (quando loga)
-- [ ] tirar o aviso de login
-- [ ] Retornar para tela inicial ao logar
+- [x] tirar o aviso de login
+- [x] Retornar para tela inicial ao logar
 
 ### Cadastro
-- [ ] Desentortar tudo
-- [ ] inserir termos
-- [ ] Fazer o "Cadastro" funcionar
+- [x] Desentortar tudo
+- [x] inserir termos
+- [x] Fazer o "Cadastro" funcionar
 
 ## Criar telas
 - [ ] De Produto
