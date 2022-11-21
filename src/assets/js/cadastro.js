@@ -30,3 +30,4 @@ var Cadastrar = () => {
 }
 
 loginCheck()
+loadCarrinho()

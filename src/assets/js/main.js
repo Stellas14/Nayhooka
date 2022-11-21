@@ -148,16 +148,36 @@ request.onsuccess = function () {
     // db.createObjectStore("teste", { keyPath: "id" });
 
     // 1
-    const transaction = db.transaction(["carrinho","index"], "readwrite");
+    const transaction = db.transaction(["carrinho",
+    "produtoSelecionado",
+    "index",
+    "promocoes",
+    "narguiles",
+    "acessorios",
+    "pesquisa"], "readwrite");
   
     //2
     const carrinho = transaction.objectStore("carrinho");
     const index = transaction.objectStore("index");
+    const narguiles = transaction.objectStore("narguiles");
+    const acessorios = transaction.objectStore("acessorios");
+    const pesquisa = transaction.objectStore("pesquisa");
   
     //3
     product.index.forEach(e => {
         index.put(e)
     })
+    product.narguiles.forEach(e => {
+        narguiles.put(e)
+    })
+    product.acessorios.forEach(e => {
+        acessorios.put(e)
+    })
+
+    product.pesquisa.forEach(e => {
+        pesquisa.put(e)
+    })
+
 
 
     // produtos.put(product);
@@ -215,3 +235,6 @@ var selecionarProduto = (element)=>{
     console.log(element)
 
 }
+
+
+loadCarrinho()

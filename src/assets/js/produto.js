@@ -21,10 +21,10 @@ request.onsuccess = function () {
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         <div class="row mt-5">
             <div>
-            <input min="1" max="99" value="1" class="col-1 mb-5 me-1" type="number"><label>Quantidade</label>
+            <input id="qtsProduto" min="1" max="99" value="1" class="col-1 mb-5 me-1" type="number"><label>Quantidade</label>
             </div>
             
-            <button onclick="adicionarCarrinho" class="mt-5" class="col-12 btn">Adicionar no carrinho</button>
+            <button onclick="adicionarCarrinho(${JSON.stringify(busca.result[0]).toString().replaceAll('"','\'')},)" class="mt-5" class="col-12 btn">Adicionar no carrinho</button>
         </div>
         </div>
         </div>
@@ -39,7 +39,20 @@ request.onsuccess = function () {
 }
 
 
-const adicionarCarrinho = () => {
+const adicionarCarrinho = (produto,quantidade) => {
+ const request = indexedDB.open("NayDB", 1);
+
+request.onsuccess = function () {
+    const db = request.result;
+    const transection = db.transaction(["carrinho"], "readwrite");
+    const busca =  transection.objectStore('carrinho')
+    const listCarrinho = document.querySelector('#listCarrinho')
+    busca.put({...produto,quantidade:document.querySelector('#qtsProduto').value})
+    
+    loadCarrinho()
 
 }
 
+}
+
+loadCarrinho()

@@ -36,7 +36,17 @@
       <span class="lILogin" id="labelAcessarConta">Faça seu login ou Cadastre-se</span>
     </div>
     <div class="col-2 px-0" id="carrinho">
-      <i class="fa-solid fa-cart-shopping fa-2x"></i>
+      <div class="dropdown">
+        <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-cart-shopping fa-2x"></i>
+        </a>
+      
+        <div id="listCarrinho" class="dropdown-menu dropCarrinho row" aria-labelledby="dropdownMenuLink">
+          <span>Você não possui produtos no carrinho</span>
+        </div>
+      </div>
+
+      
     </div>
   </header>
 
