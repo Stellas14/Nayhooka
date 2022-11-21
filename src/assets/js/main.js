@@ -194,7 +194,6 @@ request.onsuccess = function () {
     produtos = objectStore.getAll()
   
     produtos.onsuccess = function () {
-      console.log('idQuery', produtos.result);
       produtos = produtos.result
   
       const mainDiv = document.querySelector('#gridProdutos')
